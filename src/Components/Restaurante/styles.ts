@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const Card = styled.div`
   background-color: ${Cores.branca};
-  border: solid 2px ${Cores.rosa};
+  border: solid 1px ${Cores.rosa};
   color: ${Cores.rosa};
   position: relative;
   max-width: 472px;

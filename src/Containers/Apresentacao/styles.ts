@@ -9,7 +9,12 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     height: 220px;
     background-size: cover;
-    max-width: 100%;
+    max-width: 768px;
+  }
+  @media (min-width: 480px) and (max-width: 768px) {
+    width: 100%
+    height: 200px;
+    padding: 0 24px 24px 24px;
   }
 
   @media (max-width: 480px) {
