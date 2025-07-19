@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# E-Food: Seu Aplicativo de Pedidos de Comida Online
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Este é um projeto de aplicativo web de pedidos de comida online (Food Delivery App) desenvolvido com React, que simula um sistema de listagem de restaurantes, visualização de cardápios e um fluxo de compra completo, desde a adição de itens ao carrinho até a finalização do pedido com dados de entrega e pagamento.
 
-In the project directory, you can run:
+# 🚀 Visão Geral do Projeto
 
-### `npm start`
+O E-Food oferece uma experiência de usuário fluida para explorar restaurantes, visualizar seus pratos e realizar pedidos de forma intuitiva. O foco principal foi a implementação de um carrinho de compras robusto e um processo de checkout em múltiplas etapas, garantindo a validação dos dados e a comunicação eficiente com uma API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# ✨ Funcionalidades Principais
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Listagem de Restaurantes: Exibe uma lista de restaurantes disponíveis com informações básicas e avaliações.
 
-### `npm test`
+- Página de Restaurante: Ao selecionar um restaurante, o usuário pode visualizar seu cardápio completo, incluindo descrições detalhadas e preços.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Modal de Detalhes do Produto: Ao clicar em um item do cardápio, um modal interativo exibe mais detalhes do produto (imagem, descrição, preço) e permite adicioná-lo ao carrinho.
 
-### `npm run build`
+- Carrinho de Compras Dinâmico:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Adição e remoção de itens em tempo real.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Cálculo automático do valor total do pedido.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Verificação inteligente de carrinho vazio, impedindo o avanço para o checkout sem itens.
 
-### `npm run eject`
+- Fluxo de Checkout Multi-etapas:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Entrega: Formulário detalhado para coletar informações do recebedor e endereço de entrega.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Pagamento: Formulário seguro para coletar dados do cartão de crédito.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Validação de formulário em tempo real utilizando as bibliotecas Formik e Yup, fornecendo feedback imediato ao usuário.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Navegação intuitiva entre as etapas (voltar ao carrinho, ir para entrega, ir para pagamento).
 
-## Learn More
+- Integração com API Fake: Envio dos dados completos do pedido (produtos do carrinho, informações de entrega e detalhes de pagamento) para uma API simulada.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Confirmação de Pedido: Após a finalização bem-sucedida, uma tela de confirmação exibe o ID único do pedido retornado pela API.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Design Responsivo: Layout adaptável e otimizado para uma experiência de usuário consistente em diversos tamanhos de tela, incluindo desktops, tablets e celulares (modos retrato e paisagem).
+
+# 🛠️ Tecnologias Utilizadas
+- React: A biblioteca JavaScript líder para construção de interfaces de usuário reativas e componentizadas.
+
+- Redux Toolkit: Simplifica o gerenciamento de estado global da aplicação, tornando-o mais eficiente e fácil de manter.
+
+- Redux Toolkit Query (RTK Query): Uma poderosa ferramenta para gerenciamento de dados assíncronos, cache de API e simplificação de requisições HTTP.
+
+- Styled Components: Permite escrever CSS diretamente em JavaScript, proporcionando estilos componentizados e dinâmicos.
+
+- Formik: Facilita a criação e manipulação de formulários em React, lidando com estado, validação e submissão.
+
+- Yup: Uma biblioteca de validação de schemas JavaScript, utilizada em conjunto com Formik para validação robusta dos dados de entrada.
+
+- API Fake (Vercel): Um serviço utilizado para simular um backend, permitindo o desenvolvimento e teste completos do fluxo de compra.
+
+
+# 👩‍💻 Acessando o Projeto:
+
+Para acessar o projeto, entre no link: https://e-food2.vercel.app/
